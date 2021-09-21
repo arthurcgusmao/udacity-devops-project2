@@ -53,6 +53,7 @@ def predict():
     { "prediction": [ 20.35373177134412 ] }
 
     """
+    json_payload = request.json
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
@@ -60,7 +61,6 @@ def predict():
         LOG.info("JSON payload: %s", json_payload)
         return "Model not loaded"
 
-    json_payload = request.json
     LOG.info("JSON payload: %s", json_payload)
     inference_payload = pd.DataFrame(json_payload)
     LOG.info("inference payload DataFrame: %s", inference_payload)
