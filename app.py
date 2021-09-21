@@ -57,13 +57,13 @@ def predict():
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
     except(FileNotFoundError):
-        LOG.info("JSON payload: %s json_payload")
+        LOG.info("JSON payload: %s", json_payload)
         return "Model not loaded"
 
     json_payload = request.json
-    LOG.info("JSON payload: %s json_payload")
+    LOG.info("JSON payload: %s", json_payload)
     inference_payload = pd.DataFrame(json_payload)
-    LOG.info("inference payload DataFrame: %s inference_payload")
+    LOG.info("inference payload DataFrame: %s", inference_payload)
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
     return jsonify({'prediction': prediction})
