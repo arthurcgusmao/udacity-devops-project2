@@ -1,3 +1,5 @@
+![CI workflow](https://github.com/arthurcgusmao/udacity-devops-project2/actions/workflows/pythonapp.yml/badge.svg)
+
 # Project 2 - Udacity Azure DevOps Engineer Nanodegree
 
 In this project, we build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. We'll use Github Actions along with a `Makefile`, `requirements.txt` and application code to perform an initial lint, test, and install cycle. We'll also integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
