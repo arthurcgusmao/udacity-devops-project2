@@ -111,7 +111,8 @@ Which, in turn, should produce the output below:
 
 Below you can find a screenshot of the app running on Azure App Service. If all steps before were performed successfully, you should achieve the same output.
 
-![Project running on Azure App Service](Screenshot_Project-running-on-App-Service.png)
+![Project running on Azure App Service](Screenshot_App-running-on-Azure-App-Services.png)
+![Application index page online](Screenshot_Project-running-on-App-Service.png)
 
 
 ## Enhancements
