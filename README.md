@@ -115,6 +115,19 @@ Below you can find a screenshot of the app running on Azure App Service. If all 
 ![Application index page online](Screenshot_Project-running-on-App-Service.png)
 
 
+### Locust load test
+
+This repo also contains a Locust file (`./locustfile.py`) that allows one to load test the deployed application. The test can be started with:
+
+```bash
+locust
+```
+
+And then at the URL parameter one should enter `http://flask-ml-service-1933-app-service.azurewebsites.net`. If everything works, you should see the output below.
+
+![Locust load test screenshot](Screenshot_Locust-load-test.png)
+
+
 ## Enhancements
 
 The project required to use both GitHub Actions and Azure Pipelines. In the future, we could unify the CI and CD configurations into a single build service, e.g., place everything into Azure Pipelines.
